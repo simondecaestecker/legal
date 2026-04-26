@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Studio PDF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .last-update {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 24px 0 12px;
+            color: #1a1a1a;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .lang-btn {
+            background: #007aff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .lang-btn:hover {
+            background: #0056b3;
+        }
+        .lang-version {
+            display: none;
+        }
+        .lang-version.active {
+            display: block;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1a1a;
+                color: #e5e5e5;
+            }
+            .container {
+                background: #2c2c2c;
+            }
+            h1, h2 {
+                color: #fff;
+            }
+            .last-update {
+                color: #aaa;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <button class="lang-btn" onclick="toggleLang()">English / Français</button>
+        </div>
+
+        <div id="fr" class="lang-version">
+            <h1>Politique de Confidentialité</h1>
+            <p class="last-update">Dernière mise à jour : 26 avril 2026</p>
+            
+            <p>La protection de votre vie privée est au cœur de la conception de Studio PDF. Cette politique de confidentialité explique comment nous traitons vos données.</p>
+            
+            <h2>1. Collecte des données</h2>
+            <p>Studio PDF ne collecte aucune donnée personnelle. Nous ne collectons pas votre nom, votre adresse e-mail, votre adresse IP ou vos données de localisation. L'application fonctionne sans création de compte.</p>
+            
+            <h2>2. Traitement des fichiers</h2>
+            <p>Tous les traitements de fichiers PDF (fusion, édition, compression, signature, protection par mot de passe) sont effectués localement sur votre appareil.</p>
+            <p>Vos documents ne sont jamais téléchargés, stockés ou transmis à des serveurs externes.</p>
+            <p>Nous n'avons aucun accès au contenu de vos fichiers.</p>
+            
+            <h2>3. Services tiers</h2>
+            <p>L'application n'utilise aucun service tiers d'analyse (analytics) ou de publicité. Aucune donnée d'utilisation n'est partagée avec des entreprises tierces.</p>
+            
+            <h2>4. Contact</h2>
+            <p>Pour toute question concernant cette politique, vous pouvez nous contacter à : <a href="mailto:studiopdf@simondecaestecker.com">studiopdf@simondecaestecker.com</a></p>
+        </div>
+
+        <div id="en" class="lang-version active">
+            <h1>Privacy Policy</h1>
+            <p class="last-update">Last updated: April 26, 2026</p>
+            
+            <p>Privacy is at the core of Studio PDF. This policy explains how we handle your information.</p>
+            
+            <h2>1. Data Collection</h2>
+            <p>Studio PDF does not collect any personal data. We do not collect your name, email address, IP address, or location data. No account creation is required to use the app.</p>
+            
+            <h2>2. File Processing</h2>
+            <p>All PDF processing (merging, editing, compressing, signing, password protection) is performed locally on your device.</p>
+            <p>Your documents are never uploaded, stored, or transmitted to any external servers.</p>
+            <p>We have zero access to the content of your files.</p>
+            
+            <h2>3. Third-Party Services</h2>
+            <p>The app does not use any third-party analytics or advertising services. No usage data is shared with any third-party companies.</p>
+            
+            <h2>4. Contact</h2>
+            <p>If you have any questions regarding this policy, please contact us at: <a href="mailto:studiopdf@simondecaestecker.com">studiopdf@simondecaestecker.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleLang() {
+            document.getElementById('fr').classList.toggle('active');
+            document.getElementById('en').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
