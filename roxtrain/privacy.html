@@ -58,15 +58,15 @@
 
         <div id="fr" class="lang-version active">
             <h1>Politique de Confidentialité</h1>
-            <p class="last-update">Dernière mise à jour : 6 juillet 2026</p>
+            <p class="last-update">Dernière mise à jour : 4 octobre 2026</p>
 
             <p>Roxtrain est une application de génération de plans d'entraînement personnalisés pour les courses hybrides. Cette politique de confidentialité explique comment nous traitons vos données.</p>
 
             <h2>1. Collecte des données</h2>
-            <p>Roxtrain ne collecte aucune donnée personnelle identifiable sur des serveurs externes. Les informations que vous renseignez (nom, niveau, objectifs, poids de référence, date de course) sont utilisées uniquement pour générer et ajuster votre plan d'entraînement.</p>
+            <p>L'application envoie une requête GET à <code>https://api.roxtrain.app/v1/announcements/active?lang=&lt;lang&gt;</code> pour récupérer l'annonce active. La requête transmet la langue sélectionnée dans le paramètre <code>lang</code> ainsi qu'un User-Agent contenant la version et le numéro de build de l'application, la plateforme (iOS ou Android), la version du système d'exploitation et le canal (développement ou production). Si la requête est déclenchée depuis le menu de débogage, le User-Agent indique aussi ce déclenchement. Ces informations servent au suivi de la distribution des versions. Cette requête ne contient ni votre nom, ni votre profil ou votre plan d'entraînement, ni vos séances, notes ou blessures.</p>
 
             <h2>2. Stockage des données</h2>
-            <p>Toutes vos données de progression, séances et plans sont stockées localement sur votre appareil via une base de données SQLite locale et un stockage local (AsyncStorage). Elles ne sont ni transmises ni synchronisées vers des serveurs externes.</p>
+            <p>Toutes vos données de progression, séances et plans sont stockées localement sur votre appareil via une base de données SQLite locale et un stockage local (AsyncStorage). La requête d'annonces décrite ci-dessus ne contient pas ces données d'entraînement.</p>
 
             <h2>3. Notifications</h2>
             <p>L'application peut vous envoyer des notifications locales et push pour vous rappeler vos séances d'entraînement. Vous pouvez désactiver ces notifications à tout moment dans les réglages de votre appareil.</p>
@@ -86,15 +86,15 @@
 
         <div id="en" class="lang-version">
             <h1>Privacy Policy</h1>
-            <p class="last-update">Last updated: July 6, 2026</p>
+            <p class="last-update">Last updated: October 4, 2026</p>
 
             <p>Roxtrain is a personalized training plan generator for hybrid fitness races. This policy explains how we handle your information.</p>
 
             <h2>1. Data Collection</h2>
-            <p>Roxtrain does not collect any personally identifiable data on external servers. The information you provide (name, level, goals, reference weight, race date) is used only to generate and adjust your training plan.</p>
+            <p>The app sends a GET request to <code>https://api.roxtrain.app/v1/announcements/active?lang=&lt;lang&gt;</code> to retrieve the active announcement. The request sends the selected language in the <code>lang</code> parameter and a User-Agent containing the app version and build number, platform (iOS or Android), operating system version, and channel (development or production). If the request is triggered from the debug menu, the User-Agent also identifies that trigger. This information is used to track version distribution. This request does not include your name, profile or training plan, workout sessions, notes, or injuries.</p>
 
             <h2>2. Data Storage</h2>
-            <p>All your progress data, sessions, and plans are stored locally on your device using a local SQLite database and local storage (AsyncStorage). This data is never transmitted or synced to external servers.</p>
+            <p>All your progress data, sessions, and plans are stored locally on your device using a local SQLite database and local storage (AsyncStorage). The announcements request described above does not include this training data.</p>
 
             <h2>3. Notifications</h2>
             <p>The app may send local and push notifications to remind you of your training sessions. You can disable these notifications at any time in your device settings.</p>
